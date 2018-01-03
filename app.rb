@@ -14,7 +14,7 @@ require 'rdiscount'
 DataMapper::Logger.new(STDOUT, :debug)
 logger = Logger.new(STDOUT)
 
-DataMapper.setup(:default, "mysql://" + ENV["MYSQL_USER"] + ":" + ENV["MYSQL_PWD"] + "@" + ENV["MYSQL_HOST"]  + "/" + ENV["DB_NAME"])
+DataMapper.setup(:default, "mysql://" + ENV["MYSQL_USER"] + ":" + ENV["MYSQL_PWD"] + "@" + ENV["MYSQL_HOST"]  + ":3306/" + ENV["DB_NAME"])
 
 
 
